@@ -72,7 +72,7 @@ public with sharing class ClassesObjectsMethods {
         Content.add(input.startsWith('Sales'));
         Content.add(input.endsWith('Force'));     
         Content.add(input.contains('Awesome'));
-        return Content; // Replace null with the variable you used to store the result
+        return Content; 
     }
 
     /**
@@ -94,7 +94,7 @@ public with sharing class ClassesObjectsMethods {
         // Join the unique words back into a sentence
         String finalSentence = String.join(stringSet, ' ');
         // Return the sentence with unique words
-        return finalSentence; // Replace null with the variable you used to store the result
+        return finalSentence; 
     }
 
     /**
@@ -114,12 +114,11 @@ public with sharing class ClassesObjectsMethods {
             for (String ch : stringCharacters) {
             // check if the character is a vowel
             if (vowels.contains(ch)){
+            // if it is a vowel, increment the result Integer
                 vowelCount++;
             }
-            // if it is a vowel, increment the result Integer
         }
-
-        return vowelCount; // Replace null with the variable you used to store the result
+        return vowelCount; 
     }
 
     /**
@@ -143,7 +142,6 @@ public with sharing class ClassesObjectsMethods {
             gScientists.add(gName);
         }
     }
-
     // Combine the names with a comma separator and return the result
     return String.join(gScientists, ',');
 }
@@ -236,7 +234,7 @@ public with sharing class ClassesObjectsMethods {
             return null;
         }
         Integer numOfYears = Math.abs(d2.year() - d1.year());
-        return numOfYears; // Replace null with the variable you used to store the result
+        return numOfYears;
     }
 
     /**
@@ -279,7 +277,7 @@ public with sharing class ClassesObjectsMethods {
         // Call the getBookDetails method on the book object to get the details of the book
         String bookDetails = objBook.getBookDetails();        
         // Return the details of the book
-        return bookDetails; // Replace null with the variable you used to store the result
+        return bookDetails;
 }
 
     /**
@@ -306,7 +304,7 @@ public with sharing class ClassesObjectsMethods {
         // Add the book to the list
         bookList.add(mybook1);
         bookList.add(objBook);
-        return bookList; // Replace null with the variable you used to store the result      
+        return bookList;  
     }
 
 
@@ -370,7 +368,7 @@ public with sharing class ClassesObjectsMethods {
         results.add(person.getName());
         // Get the age of the person using the getter method and add it to the list
         results.add(String.valueOf(person.getAge()));
-        return results; // Replace null with the variable you used to store the result
+        return results;
     }
 
     /**
@@ -384,7 +382,7 @@ public with sharing class ClassesObjectsMethods {
         // Create a new instance of the Person class using the provided name and age
         Person person = new Person(name, age);
         // Return the new instance of the Person class
-        return person; // Replace null with the variable you used to store the result
+        return person;
     }
 
     /**
@@ -408,7 +406,7 @@ public with sharing class ClassesObjectsMethods {
         personList.add(personObj);
         }
         // Return the list of Person objects
-        return personList; // Replace null with the variable you used to store the result
+        return personList;
     }
 
 
